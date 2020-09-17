@@ -9,6 +9,17 @@
                 font-weight: normal;
                 font-style: normal;  
                 }
+                .row-header {
+                    margin: 0px auto;
+                    padding: 0px 0px; 
+                }
+
+                .row-content {
+                    margin: 0px auto;
+                    padding: 50px 0px;
+                    border-bottom: 1px ridge;
+                    min-height: 400px; 
+                }
                   .navbar-scroll {
                     background-color: rgb(0,0,0);
                     opacity: 0.8
@@ -68,7 +79,7 @@
                     font-weight: 400;
                     line-height: 28px;
                     color: #fff;
-                    text-align: left;
+                    text-align: center;
                 }
                 @media (min-width: 768px) and (max-width: 991px){
                     .service_area .single_service {
@@ -88,10 +99,6 @@
                     height: 50px;
                     margin-left: 76px;
                     margin-bottom: 10px;
-                }
-                .single_service .btn
-                {
-                    //margin-left:76px ;
                 }
                 
                 /*carousel*/
@@ -223,6 +230,108 @@
                 .social-btn .btn-danger {
                     background: #df4930;
                 }
+                .welcome_Lifeline h2{
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #1F1F1F;
+                    margin-bottom: 40px;
+                    position: relative;
+                    z-index: 9;
+                    padding-bottom: 9px;
+                }
+                .welcome_Lifeline h2:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 2px;
+                    width: 55px;
+                    background: #5DB2FF;
+                }
+                .welcome_Lifeline h3 {
+                    font-weight: 500;
+                    font-size: 36px;
+                    margin-bottom: 10px;
+                }
+                @media (max-width: 767px) {
+                    .welcome_Lifeline h2{
+                        margin-top: 30px;
+                    }
+                    .welcome_Lifeline h3 {
+                        font-size: 30px;
+                    }
+                    .welcome_Lifeline h3 br{
+                        display: none;
+                    }
+                }
+                .welcome_Lifeline p {
+                    font-size: 16px;
+                    color: #727272;
+                    line-height: 28px;
+                }
+                .welcome_Lifeline ul {
+                    margin-bottom: 40px;
+                    margin-top: 25px;
+                }
+                .welcome_Lifeline ul li {
+                    color: #727272;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+                .welcome_Lifeline ul li i {
+                    margin-right: 10px;
+                    color: #5DB2FF;
+                    font-weight: 16px;
+                }
+                .welcome_thumb {
+                    position: relative;
+                }
+                .welcome_thumb .img_1 {
+                    left: 0;
+                }
+                .welcome_thumb .img_1 img {
+                    width: 60%;
+                    height: 60%;
+                }
+                @media (max-width: 767px) {
+                    .welcome_thumb .img_1 img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .welcome_thumb .img_2 {
+                    position: absolute;
+                    bottom: -94px;
+                    right: -37px;
+                }
+                @media (max-width: 767px) {
+                   .welcome_thumb .img_2 {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        display: none;
+                    }
+                }
+
+                @media (min-width: 768px) and (max-width: 991px) {
+                    .welcome_thumb .img_2 {
+                        position: absolute;
+                        right: 0;
+                        bottom: -40px;
+                    }
+                }
+
+
+                .welcome_thumb .img_2 img {
+                    width: 89%;
+                }
+
+                @media (min-width: 768px) and (max-width: 991px) {
+                    .welcome_thumb .img_2 img {
+                        width: 100%;
+                    }
+                }
+
         </style>
     </head>
     <body>
@@ -404,9 +513,9 @@
             </div>
         </div>
     </header>
-         <!-- Jumbotron End -->
-         
-       <!-- Service Start -->
+       <!-- Jumbotron End -->
+       
+      <!-- Service Start -->
       <div class="service_area">
         <div class="">
             <div class="row no-gutters">
@@ -416,8 +525,8 @@
                             <img class="icon1" src="pic/service/monitor.png" alt=""/>
                         </div>
                         <h3>Hospitality</h3>
-                        <p>Clinical excellence must be the priority for any health care service provider.</p>
-                        <center><a href="#" class="btn btn-outline-light" role="button">Apply For a Bed</a></center>
+                        <p>We are engaged in providing services such as Online Bed Booking Facility.</p>
+                        <center><a href="#" class="btn btn-outline-light" role="button">Book a Bed</a></center>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-4">
@@ -426,7 +535,7 @@
                             <img class="icon1" src="pic/service/call.png" alt=""/>
                         </div>
                         <h3>Emergency Care</h3>
-                        <p class=" align-self-center">Clinical excellence must be the priority for any health care service provider.</p>
+                        <p class=" align-self-center">We are engaged in providing 24 X 7 hours ambulance services.</p>
                         <center> <a href="#" class="btn btn-outline-light" role="button">+10 672 356 3567</a></center>
                     </div>
                 </div>
@@ -436,7 +545,7 @@
                             <img class="icon1" src="pic/service/hospital.png" alt=""/>
                         </div>
                         <h3>Chamber Service</h3>
-                        <p>Clinical excellence must be the priority for any health care service provider.</p>
+                        <p>We are engaged in providing services such as Online appointment </p>
                         <center><a href="#" class="btn btn-outline-light justify-content-center" role="button">Make an Appointment</a></center>
                     </div>
                 </div>
@@ -444,7 +553,43 @@
         </div>
     </div>
        <!-- Service End -->
-       
+
+       <!-- Welcome to Life line-->
+       <div class="lifeline_care my-5">
+           <div class="container">
+               <div class="row row-content ">
+                   <div class="col-md-6 col-lg-6">
+                       <div class="welcome_thumb">
+                           <div class="img_1">
+                               <img src="pic/Index/wel4.jpg" alt=""/>
+                           </div>
+                           <div class="img_2 d-none d-lg-flex">
+                               <img src="pic/Index/wel2.png" alt=""/>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-6 col-lg-6">
+                       <div class="welcome_Lifeline">
+                           <h2>Welcome to LifeLine Health Center</h2>
+                           <h3>Best Care For Your <br>
+                               Good Health</h3>
+                           <p> Established in 2000, LifeLine Health Center, the flagship of Northen India 
+                               started as a secondary care unit and gradually developed as a 
+                               Tertiary Care Unit over the years. In our 20 years of journey, we 
+                               have touched the lives of millions of patients of India and across India.</p>
+                           <ul class=" list-unstyled">
+                               <li> <i class="fa fa-check-circle-o"></i> 24 hours patient transport vehicle available.</li>
+                               <li> <i class="fa fa-check-circle-o"></i> 24 hours ECG services including machine report.</li>
+                               <li> <i class="fa fa-check-circle-o"></i> Free reliable quality medicines are available. </li>
+                           </ul>
+                           <a href="#" class="btn btn-outline-primary" role="button">Learn More</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!-- End of Welcome -->
+              
        <!-- carousel Start -->
 
        <div id="carousel-start">
@@ -459,7 +604,7 @@
                    </ol>
 
                    <!--    Carousel Slider    -->
-                   <div class="carousel-inner" role="listbox">
+                   <div class="carousel-inner my-5 row-content" role="listbox">
                        <div class="carousel-item active">
                            <img src="pic/carousel/covid.webp" class="d-block w-100">                       
                            <div class="carousel-caption">  
@@ -500,16 +645,15 @@
                    </div>
                </div>
            </div>
-     
-       
        <!-- Carousel End -->
-       <div>
-           hellos
-       </div>
+       
+       <!-- Department -->
+            
+       <!-- DEpartment End -->
         <!-- Script -->
         <script src="jquery-3.5.1.min.js" type="text/javascript"></script>
         <script src="popper.js/dist/umd/popper.min.js" type="text/javascript"></script>
         <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        
+
     </body>
 </html>
