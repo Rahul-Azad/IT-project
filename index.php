@@ -4,24 +4,6 @@
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <style>
-            #carousel-start-1{
-                padding-bottom: 30px;
-                padding-top: 30px;
-                background-image: url("pic/feed.jpg");
-                background-repeat: no-repeat;
-                background-size:  cover;
-            }
-            #carousel-start-1 .carousel {
-                position: relative;
-                width: 100%;
-            }
-           #carousel-start-1 .carousel-item {  
-                height: 300px;
-            }
-            #carousel-start-1 .carousel-item img{
-                min-height: 300px;    
-            }
-
         </style>
     </head>
     <body>
@@ -245,7 +227,7 @@
         <!-- Service End -->
 
         <!-- Welcome to Life line-->
-        <div class="lifeline_care my-5">
+        <div class="lifeline_care">
             <div class="container">
                 <div class="row row-content ">
                     <div class="col-md-6 col-lg-6">
@@ -429,50 +411,85 @@
             </div>
         </div>
         <!-- Department End -->
-        
+
         <!-- Feed Start-->
-                
+
         <div id="carousel-start-1">
-            <div>
-                <h1 class="feed-header text-center">What People Say..</h1>
-            </div>
-            <div id="feed-carousel" class="carousel slide" data-ride="carousel">
+            <div class="feed-outer bg-dark">
+                <div class="feed-header">
+                    <h1 class="text-center">What People Say..</h1>
+                </div>
+                <div id="feed-carousel" class="carousel slide" data-ride="carousel">
 
-                <!--    Carousel Indicators    -->
-                <ol class="carousel-indicators">
-                    <li data-target="#feed-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#feed-carousel" data-slide-to="1"></li>
-                    <li data-target="#feed-carousel" data-slide-to="2"></li>
-                </ol>
+                    <!--    Carousel Indicators    -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#feed-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#feed-carousel" data-slide-to="1"></li>
+                        <li data-target="#feed-carousel" data-slide-to="2"></li>
+                    </ol>
 
-                <!--    Carousel Slider    -->
-                <div class="carousel-inner my-5 row-content" role="listbox">
-                    <div class="carousel-item  offset-2 col-8  active">
-                        <p>Due to this coronavirus is running out there… Our doctors are also walking after that damn virus</p>               
+                    <!--    Carousel Slider    -->
+                    <div class="carousel-inner row-content" role="listbox">
+                        <div class="carousel-item  offset-2 col-8  active">
+                            <div class="feed_info text-center">
+                                <div class="quote">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br>
+                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
+                                    <br>
+                                    Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                <div class="testmonial_author">
+                                    <h4>Asana Korim</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item  offset-2 col-8 ">
+                            <div class="feed_info text-center">
+                                <div class="quote">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br>
+                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
+                                    <br>
+                                    Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                <div class="testmonial_author">
+                                    <h4>Asana Korim</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item  offset-2 col-8 ">
+                            <div class="feed_info text-center">
+                                <div class="quote">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br>
+                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
+                                    <br>
+                                    Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                <div class="testmonial_author">
+                                    <h4>Asana Korim</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!--     Carousel Controls     -->
+                        <a href="#feed-carousel" class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a href="#feed-carousel" class="carousel-control-next" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <div class="carousel-item  offset-2 col-8 ">
-                        <p> COVID-19 is a disease caused by SARS-CoV-2 that can trigger what doctors call a respiratory tract infection. It can affect your upper respiratory tract (sinuses, nose, and throat) or lower respiratory tract.</p>
-                       
-                    </div>
-                    <div class="carousel-item  offset-2 col-8 ">
-                       <p> COVID-19 is a disease caused by SARS-CoV-2 that can trigger what doctors call a respiratory tract infection. It can affect your upper respiratory tract (sinuses, nose, and throat) or lower respiratory tract.</p>
-                        
-                    </div>
-                    <!--     Carousel Controls     -->
-                    <a href="#feed-carousel" class="carousel-control-prev" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a href="#feed-carousel" class="carousel-control-next" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
             </div>
         </div>
-        
+
         <!-- Feed End-->
-        
+
         <!-- doctor start -->
 
         <div class="doctor bg-fade">
@@ -499,7 +516,7 @@
                                 <h5>
                                     <a href="#"><i class="fa fa-facebook offset-2"></i></a>
                                     <a href="#"><i class="fa fa-twitter offset-2"></i></a>
-                                     <a href="#"><i class="fa fa-instagram offset-2"></i></a>
+                                    <a href="#"><i class="fa fa-instagram offset-2"></i></a>
                                 </h5>
                             </div>
                         </div>
@@ -537,20 +554,123 @@
                                 <h5>
                                     <a href="#"><i class="fa fa-facebook offset-2"></i></a>
                                     <a href="#"><i class="fa fa-twitter offset-2"></i></a>
-                                     <a href="#"><i class="fa fa-instagram offset-2"></i></a>
+                                    <a href="#"><i class="fa fa-instagram offset-2"></i></a>
                                 </h5>
                             </div>
                         </div>
                     </div>
                     <div class="offset-4 col-4 offset-4">
-                         <a href="#" class="btn btn-outline-primary btn-block" role="button"> More </a>
+                        <a href="#" class="btn btn-outline-primary btn-block" role="button"> More </a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
-
         <!-- doctor End -->
+        
+        <!-- Footer -->
+        <footer class="page-footer font-small pt-4">
+            <div class="footer_bg">
+                <div class="container text-center text-md-left footer-head">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1 footer-text">
+
+                            <!-- Content -->
+                            <img src="pic/logo/logo3.png" alt=""/>
+                            <p>Established in 2000, LifeLine Health Center, the flagship of Northen
+                                India started as a secondary care unit and gradually developed as 
+                                a Tertiary Care Unit over the years. In our 20 years of journey, 
+                                we have touched the lives of millions of patients of India and 
+                                across India.</p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="clearfix w-100 d-md-none">
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase mb-5 mt-4 footer-text">About</h5>
+
+                            <ul class="list-unstyled  footer-link footer-text">
+                                <li>
+                                    <p class="sel">
+                                        <a href="#" class="active" >Home</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#!">Department</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#!">Doctor</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#!">Contact Us</a>
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+
+                        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1 footer-link footer-text ">
+
+                            <h5 class="font-weight-bold text-uppercase mb-5 mt-4 ">Address</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>
+                                        <i class="fa fa-home mr-3"></i>Nalli Gaya,Bihar,India</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa fa-envelope mr-3"></i> Lifeline@Care.com</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+                            <h5 class="font-weight-bold text-uppercase mb-5 mt-4 footer-text">Follow Us</h5>
+
+                            <a type="button" class="btn-floating col-2 col-sm-12">
+                                <h1><i class="fa fa-facebook-f"></i></h1>
+                            </a>
+                            <a type="button" class="btn-floating col-2 col-sm-12">
+                                <h1><i class="fa fa-twitter"></i></h1>
+                            </a>
+                            <a type="button" class="btn-floating col-2 col-sm-12">
+                                <h1><i class="fa fa-google"></i></h1>
+                            </a>
+                            <a type="button" class="btn-floating col-2 col-sm-12">
+                                <h1><i class="fa fa-instagram"></i></h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <div class="footer-copyright text-center py-3 footer-text">© 2000 Copyright
+            </div>
+            <!-- Copyright -->
+            </div>
+        </footer>
+        <!-- Footer End -->
+        
         <!-- Script -->
         <script src="jquery-3.5.1.min.js" type="text/javascript"></script>
         <script src="popper.js/dist/umd/popper.min.js" type="text/javascript"></script>

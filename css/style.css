@@ -363,11 +363,12 @@ button.btn:hover { opacity: 0.6;background: #3498DB ; color: #eee; }
 }
 .department_content a{
     text-decoration: none;
-     color: #1F1F1F;
+    color: #1F1F1F;
 }
 .department_content a:hover {
-  color: #5DB2FF;
+    color: #5DB2FF;
 }
+
 .department_content p {
     font-size: 16px;
     color: #727272;
@@ -391,7 +392,7 @@ button.btn:hover { opacity: 0.6;background: #3498DB ; color: #eee; }
 }
 .doctor_content
 {
-     padding: 22px 30px 24px 30px;
+    padding: 22px 30px 24px 30px;
 }
 .doctor_content h3
 {
@@ -419,5 +420,87 @@ button.btn:hover { opacity: 0.6;background: #3498DB ; color: #eee; }
 }
 .dctr_sm a:hover
 {
-  color: #1F1F1F;
+    color: #1F1F1F;
+}
+#carousel-start-1{
+
+    background-image: url("../pic/feed.jpg");
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+#carousel-start-1 .carousel {
+    position: relative;
+    width: 100%;
+}
+#carousel-start-1 .carousel-item {  
+    height: 100px;
+}
+.feed-header{
+    padding-top: 50px;
+    color: floralwhite;
+}
+.quote i {
+    color: #fff;
+    font-size: 40px;
+}
+.feed_info p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 47px;
+}
+.feed_info h4 {
+    color: #fff;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    padding-top: 21px;
+}
+@media(max-width:768px){
+    .feed_info p {
+        color: #fff;
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 17px;
+    }
+    .feed_info h4{
+        font-size: 10px;
+    }
+}
+.feed-outer{
+    background-color: black;
+    opacity: 0.6;
+}
+.page-footer{
+    background-image: url("../pic/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer_bg{
+    background: black;
+    opacity: 0.7;
+    border-radius:360px; 
+}
+.footer-link a{
+    text-decoration: none;
+    color: floralwhite;
+}
+
+.footer-link a:hover {
+    color: #5DB2FF;
+}
+.footer-text{
+    font-family: cursive;
+    color:floralwhite;
+}
+.footer-head{
+    padding-top: 50px;
+}
+.footer-text img{
+    width: 100%;
+    height: 100px;
 }
